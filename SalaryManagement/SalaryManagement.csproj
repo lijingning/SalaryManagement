@@ -54,8 +54,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Salary.cs" />
-    <Compile Include="Teacher.cs" />
+    <Compile Include="entity\Salary.cs" />
+    <Compile Include="entity\Teacher.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
