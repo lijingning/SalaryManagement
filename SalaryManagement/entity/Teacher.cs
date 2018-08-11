@@ -32,7 +32,7 @@ namespace SalaryManagement.entity
         public int GetTotalOtherTime()
         {
             int sum = 0;
-            foreach(othertime item in OtherTime)
+            foreach (othertime item in OtherTime)
             {
                 sum += item.Num;
             }
@@ -47,7 +47,7 @@ namespace SalaryManagement.entity
             }
         }
 
-        Salary Salary = new Salary();
+        Salary Salary { get; set; }
         public float ASalary
         {
             get { return ATime * Salary.A; }
@@ -88,7 +88,13 @@ namespace SalaryManagement.entity
         }
         public float TotalSalary
         {
-            get { return ASalary + BSalary + CSalary + DSalary+MorningSalary+EveningSalary+OtherSalary+OverSalary; }
+            get { return ASalary + BSalary + CSalary + DSalary + MorningSalary + EveningSalary + OtherSalary + OverSalary; }
+        }
+
+        //构造函数
+        public Teacher(Salary Salary)
+        {
+            this.Salary = Salary;
         }
 
 
