@@ -14,8 +14,10 @@ namespace SalaryManagement.entity
         public float C { get; set; } = 23;
         public float D { get; set; } = 20;
         //早晚自习单位课时工资
-        public float EarlySelfStudy { get; set; } = 23;
-        public float EveningSelfStudy { get; set; } = 30;
+        public float Morning { get; set; } = 23;
+        public float Evening { get; set; } = 30;
+        //其他活动单位课时工资  未完成
+        public float Other { get; set; }
         public float Over { get; set; } = 10; //超课时补贴单位课时工资
     }
 }
